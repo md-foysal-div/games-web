@@ -199,7 +199,9 @@ body{
     width:299px;
 }
 .online-games-card-item{
-    width:300px;
+    /* width:300px; */
+    padding-right:41px;
+    cursor:pointer;
 }
 .overlay-icon{
     text-align:center;
@@ -213,6 +215,13 @@ body{
     font-size:18px;
     font-weight:400;
 }
+.card-text h3{
+    color: #000000;
+    font-size:17px;
+    font-weight:400;
+   
+
+ }
 .overlay{
     position:absolute;
     top:50%;
@@ -229,7 +238,59 @@ body{
 }
 
 /* =======================online-part-end============= */
-
+/* =========================== */
+#play-games{
+    margin-top:100px;
+}
+.play-games-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.play-games-text{
+    text-align:right;
+    margin-right:200px;
+}
+.play-games-img img{
+    width:570px;
+}
+.play-games-text .play-games-span-one {
+	color: #ac53ac;
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+}
+.play-games-text .play-games-span-two {
+	color: #000000;
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+}
+.play-games-text .play-games-span-three {
+	color: #000000;
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+}
+.play-games-text p{
+	color: #000000;
+	font-size: 14px;
+	font-weight: 400;
+	display: block;
+    padding-left:50px;
+}
+.position-img img{
+    width:300px;
+}
+.play-games-img{
+    position:relative;
+}
+.position-img {
+	position: absolute;
+	bottom: -82px;
+	left: -144px;
+}
+/* ============================== */
 /* =============responsive for mobile================ */
 
 @media screen and (max-width:676px){
@@ -281,7 +342,44 @@ body{
      .online-games-card-item{
         text-align:center;
      }
+     .card-text h3{
+        color: #000000;
+        font-size:10px;
+        font-weight:400;
+        padding-top:10px;
+        margin-bottom:20px;
 
+     }
+     .overlay{
+        display:none;
+
+     }
+     /* ---------------------------- */
+     .play-games-text{
+        text-align:center;
+        margin-right:0;
+     }
+     .play-games-text > span{
+        margin-bottom:10px;
+     }
+     .play-games-text p{
+        margin-bottom:10px;
+        padding: 0 103px;
+     }
+     .play-games-img > img{
+        width:380px;
+     }
+    .play-games-wrapper{
+        flex-direction: column;
+    }
+    .position-img > img{
+        width:200px;
+    }
+    .position-img {
+        position: absolute;
+        bottom: -46px;
+        left: -100px;
+    }
 }
 /* =============responsive for mobile================ */
 /* =============responsive for tab================ */
@@ -306,9 +404,24 @@ body{
      .we-are-img img {
         width: 333px;
         height: 310px;
+        text-align:center;
     }
      .we-are-text{
         text-align:center;
      }
+     .online-games-wrapper{
+        flex-direction: column;
+        display:grid;
+        grid-template-columns:repeat(2 ,1fr);
+     }
+     .card-text h3{
+        color: #000000;
+        font-size:10px;
+        font-weight:400;
+        padding-top:10px;
+        margin-bottom:20px;
+
+     }
+ 
 } 
 /* =============responsive for tab================ */
