@@ -36,6 +36,7 @@ body{
 .navber-item{
     display:flex;
     justify-content:space-between;
+    align-items:center;
 }
 .navber-right-part ul{
     display:flex;
@@ -70,22 +71,118 @@ body{
     height:23px;
 }
 
-
-
-
-
-
-
-
 /* =======================navber-part-end============= */
-
-/* =============responsive for mobile================ */
-.navber-left-part{
-    justify-content:center;
-    margin-bottom:50px;
+/* =======================banner-part-start============= */
+#banner-part{
+    background:#fff9f9;
 }
 
-@media screen and (max-width:576px) {
+.banner-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.banner-text h2{
+    color:#0B0223;
+    font-size:35px;
+    font-weight:600;
+
+}
+.banner-text h1{
+    color:#94418f;
+    font-size:60px;
+    font-weight:700;
+ 
+}
+.banner-text h1{
+    color:#94418f;
+    font-size:60px;
+    font-weight:700;
+ 
+}
+.banner-text .banner-span-one{
+    color:#0B0223;
+    font-size:14px;
+    font-weight:400;
+    display:block;
+    margin-bottom:5px;
+
+}
+.banner-buttons{
+    margin-top:40px;
+}
+.banner-buttons .banner-button-one{
+    color:#FFFFFF;
+    font-size:14px;
+    padding:15px 40px;
+    background:#f45d8e;
+    border-radius:30px;
+    border:none;
+    margin-right:10px;
+
+}
+.banner-buttons .banner-button-two{
+    color:#FFFFFF;
+    font-size:14px;
+    padding:15px 40px;
+    background:#4EC5F7;
+    border-radius:30px;
+    border:none
+
+}
+.banner-img > img{
+    width:570px;
+}
+
+
+/* =======================banner-part-end============= */
+/* =======================we-are-gammer-part-start============= */
+.we-are-gamer-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.we-are-text{
+    text-align:right;
+}
+.we-are-text h3{
+    color:#ca44ad;
+    font-size:30px;
+    font-weight:700;
+}
+.we-are-text p{
+    color:#000000;
+    font-size:14px;
+    font-weight:400;
+    padding:10px 0;
+}
+.we-are-gamer-item .gamer-button{
+    color:#FFFFFF;
+    font-size:14px;
+    padding:15px 40px;
+    background:#f45d8e;
+    border-radius:30px;
+    border:none;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.we-are-text h4{
+    color:#000000;
+    font-size:20px;
+    font-weight:500;
+}
+
+/* =======================we-are-manner-part-end============= */
+/* =======================we-are-manner-part-============= */
+/* =======================we-are-manner-part-end============= */
+
+/* =============responsive for mobile================ */
+
+@media screen and (max-width:676px){
+    .navber-left-part{
+        justify-content:center;
+        margin-bottom:50px;
+    }
      .navber-item{
         flex-direction: column;
      }
@@ -95,6 +192,31 @@ body{
      .navber-right-part ul li{
         margin-bottom:25px;
      }
+     /* -------------nav-part--------- */
+     .banner-wrapper{
+        flex-direction: column-reverse;
+     }
+     .banner-text{
+        margin-top:40px;
+     }
+     .banner-img img{
+        width:546px;
+     }
+     /* --------------banner-part------------ */
+     .we-are-gamer-item{
+        flex-direction:column;
+     }
+     .we-are-img img{
+        width:546px;
+     }
+     .we-are-text{
+        text-align:center;
+        width:500px;
+     }
+     .we-are-gamer-item{
+        align-items:center;
+     }
+ 
 
 }
 /* =============responsive for mobile================ */
@@ -109,5 +231,20 @@ body{
      .navber-left-part{
         margin-bottom:80px;
      }
-}
+     /* -------------------nav-part------------ */
+     .banner-img img{
+        width:338px;
+     }
+     /* ---------------banner-part-------------------- */
+     #we-are-gamer{
+        margin-top:50px;
+     }
+     .we-are-img img {
+        width: 333px;
+        height: 310px;
+    }
+     .we-are-text{
+        text-align:center;
+     }
+} 
 /* =============responsive for tab================ */
