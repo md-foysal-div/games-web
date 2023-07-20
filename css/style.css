@@ -172,9 +172,63 @@ body{
     font-weight:500;
 }
 
-/* =======================we-are-manner-part-end============= */
-/* =======================we-are-manner-part-============= */
-/* =======================we-are-manner-part-end============= */
+/* =======================we-are-ganner-part-end============= */
+/* =======================online-part-============= */
+#online-games{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+.online-games-title-text{
+    text-align:center;
+    margin-bottom:50px;
+}
+.online-games-title-text h3{
+    color:#000000;
+    font-size:25px;
+    font-weight:700;
+}
+.online-games-title-text .online-games-span{
+    color:#ca44ad;
+    padding-left:5px;
+}
+.online-games-wrapper{
+    display:flex;
+    justify-content:space-between;
+}
+.card-img > img{
+    width:299px;
+}
+.online-games-card-item{
+    width:300px;
+}
+.overlay-icon{
+    text-align:center;
+}
+
+.card-img{
+    position:relative;
+}
+.overlay-text h4{
+    color:rgb(254, 254, 254);
+    font-size:18px;
+    font-weight:400;
+}
+.overlay{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% ,-50%);
+    cursor:pointer;
+    opacity:0;
+    visibility:hidden;
+    transition:all linear 0.3s;
+}
+.online-games-card-item:hover .overlay{
+    opacity:1;
+    visibility:visible;
+}
+
+/* =======================online-part-end============= */
 
 /* =============responsive for mobile================ */
 
@@ -216,7 +270,17 @@ body{
      .we-are-gamer-item{
         align-items:center;
      }
- 
+     /* -----------------online-games----------------- */
+     #online-games{
+        margin-top:80px;
+     }
+     .online-games-wrapper{
+        flex-direction: column;
+        justify-content: center;;
+     }
+     .online-games-card-item{
+        text-align:center;
+     }
 
 }
 /* =============responsive for mobile================ */
