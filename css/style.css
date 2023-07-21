@@ -241,6 +241,7 @@ body{
 /* =========================== */
 #play-games{
     margin-top:100px;
+    margin-bottom:100px;
 }
 .play-games-wrapper{
     display:flex;
@@ -291,6 +292,38 @@ body{
 	left: -144px;
 }
 /* ============================== */
+/* =================================== */
+.logo-item {
+	display: flex;
+	align-items: center;
+	width: 207px;
+	padding: 5px;
+}
+.logo-item h3{
+    color:black;
+    font-size:18px;
+    font-weight:400px;
+}
+.logo-item:hover{
+    border: 1px solid firebrick;
+    border-radius:30px;
+}
+.logo-item:hover h3{
+    color:firebrick;
+}
+.logo-item img{
+    margin-right:5px;
+}
+.logo-wrapper{
+    display:grid;
+    grid-template-columns: repeat(5, 100px); 
+    grid-template-rows: repeat(4, 100px);
+    column-gap: 180px;
+    row-gap: 10px;;
+}
+
+
+/* =================================== */
 /* =============responsive for mobile================ */
 
 @media screen and (max-width:676px){
@@ -334,6 +367,7 @@ body{
      /* -----------------online-games----------------- */
      #online-games{
         margin-top:80px;
+        background:#f9f9f9
      }
      .online-games-wrapper{
         flex-direction: column;
@@ -349,6 +383,9 @@ body{
         padding-top:10px;
         margin-bottom:20px;
 
+     }
+     .online-games-card-item{
+        padding-right:0;
      }
      .overlay{
         display:none;
@@ -380,6 +417,19 @@ body{
         bottom: -46px;
         left: -100px;
     }
+    /* --------------------------- */
+    .logo-wrapper{
+        display:grid;
+        grid-template-columns: repeat(3, 100px); 
+        grid-template-rows: repeat(3, 100px);
+        column-gap: 180px;
+        row-gap: 10px;;
+    }
+    .logo-wrapper{
+        column-gap: 90px;
+        row-gap: 10px;;
+    }
+
 }
 /* =============responsive for mobile================ */
 /* =============responsive for tab================ */
@@ -422,6 +472,40 @@ body{
         margin-bottom:20px;
 
      }
- 
+     /* -------------------------- */
+     .play-games-text{
+        text-align:center;
+        margin-right:0;
+     }
+     .play-games-text > span{
+        margin-bottom:10px;
+     }
+     .play-games-text p{
+        margin-bottom:10px;
+        padding: 0 103px;
+     }
+     .play-games-img > img{
+        width:380px;
+     }
+    .play-games-wrapper{
+        flex-direction: column;
+    }
+    .position-img > img{
+        width:200px;
+    }
+    .position-img {
+        position: absolute;
+        bottom: -46px;
+        left: -100px;
+    }
+    .online-games-card-item {
+        /* width: 300px; */
+        padding-right:0;
+        text-align:center;
+        cursor:revert;
+    }
+    .overlay{
+        display:none;
+    }
 } 
 /* =============responsive for tab================ */
