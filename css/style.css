@@ -324,6 +324,85 @@ body{
 
 
 /* =================================== */
+/* =================================== */
+#footer{
+    background:#0B0223;
+    padding:120px 0;
+}
+.footer-top-text{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:20px;
+}
+.footer-left-text > h2{
+    color:#fff9f9;
+    font-size:35px;
+    font-weight:700;
+    font-family: 'Poppins', sans-serif;
+    padding-left:10px;
+
+}
+.footer-left-text .nav-span-g{
+    color:#f2004f;
+}
+.footer-item{
+    text-align:center;
+    margin:0 auto
+}
+.footer-list ul{
+    display:flex;
+    justify-content:center
+}
+.footer-list li{
+    display:flex;
+    list-style: none;;
+    
+}
+.footer-list li a{
+    color:#fff9f9;
+  text-decoration:none;
+  margin-right:15px;
+  margin-left:15px;
+ 
+}
+.footer-icon{
+    margin-top:20px;
+}
+.footer-icon img{
+    margin-right:20px;
+}
+.footer-terms{
+    margin-top:20px;
+}
+.footer-terms ul{
+    display:flex;
+    justify-content:center
+}
+.footer-terms li{
+    display:flex;
+    list-style: none;;
+    
+}
+.footer-terms li a{
+    color:#fff9f9;
+  text-decoration:none;
+  margin-right:15px;
+  margin-left:15px;
+ 
+}
+.footer-copy-div{
+    padding-top:20px;
+}
+.footer-copy-div a{
+    color:#fff9f9;
+    font-size:14px;
+    font-weight:400;
+    text-decoration:none;
+   
+}
+
+/* =================================== */
 /* =============responsive for mobile================ */
 
 @media screen and (max-width:676px){
