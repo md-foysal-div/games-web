@@ -508,6 +508,26 @@ body{
         column-gap: 90px;
         row-gap: 10px;;
     }
+    /* --------------------------------------- */
+    .footer-list ul li{
+        display:contents
+    }
+    .footer-list ul{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        row-gap: 10px;
+        text-align:center;
+    }
+    .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        row-gap: 20px;
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+    .footer-icon img{
+        margin:0 auto
+    }
 
 }
 /* =============responsive for mobile================ */
